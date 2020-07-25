@@ -15,7 +15,7 @@
         }
       },
       mounted() {
-        this.$auth.setUser(this.$router.push(`/auth/${this.$route.query.origin}`))
+        this.$auth.setUser(`/auth/${this.$route.query.origin}`)
         // this.$auth.setToken('local', 'Bearer ' + this.token);
         //
         // console.log('perhaps ' + this.$auth.user)
