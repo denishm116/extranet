@@ -15,15 +15,18 @@
         }
       },
       mounted() {
-        this.$auth.setToken('local', 'Bearer ' + this.token);
-        this.$auth.setStrategy('local');
+        this.$auth.setUser(this.$router.push(`/auth/${this.$route.query.origin}`))
+        // this.$auth.setToken('local', 'Bearer ' + this.token);
+        //
+        // console.log('perhaps ' + this.$auth.user)
+        // this.$auth.fetchUser().then(() => {
+        //   console.log('after ' + this.$auth.user)
+        //   return this.$router.push('/');
+        // }).catch((e) => {
+        //   this.$auth.logout();
+        //   return this.$router.push(`/auth/${this.$route.query.origin ? this.$route.query.origin : 'register'}?error=1`);
+        // });
         console.log(this.$auth.user)
-        this.$auth.fetchUser().then(() => {
-          return this.$router.push('/');
-        }).catch((e) => {
-          this.$auth.logout();
-          return this.$router.push(`/auth/${this.$route.query.origin ? this.$route.query.origin : 'register'}?error=1`);
-        });
       }
     }
 </script>
