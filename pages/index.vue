@@ -17,7 +17,6 @@
       <div>Whitehaven Beach</div>
       {{$auth.$state.loggedIn}}
     </v-card-text>
-
     <v-card-actions>
 
       <v-btn
