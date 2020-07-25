@@ -15,9 +15,10 @@
         }
       },
       mounted() {
+        this.$auth.setToken('local', 'Bearer ' + this.token);
         this.$auth.setUser(`${this.$route.query.origin}`)
-        // this.$auth.setToken('local', 'Bearer ' + this.token);
-        //
+
+
         // console.log('perhaps ' + this.$auth.user)
         // this.$auth.fetchUser().then(() => {
         //   console.log('after ' + this.$auth.user)
