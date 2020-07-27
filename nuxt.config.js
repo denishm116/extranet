@@ -68,22 +68,13 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxtjs/auth',
-    // '@nuxtjs/proxy',
   ],
 
   axios:
     {
-      // proxy: true,
+
       baseUrl: 'https://api.extranet.more-otdih.online/api',
-      // headers: {
-      //   'Access-Control-Allow-Origin': '*'
-      // }
-
     },
-
-  // proxy: {
-  //   '/': { target: 'http://localhost:3000', pathRewrite: {'^/': ''}, changeOrigin: true }
-  // },
 
   fontawesome: {
     component: 'fa',
