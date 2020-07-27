@@ -75,9 +75,9 @@ export default {
     {
       // proxy: true,
       baseUrl: 'https://api.extranet.more-otdih.online/api',
-      headers: {
-        'Access-Control-Allow-Origin': '*'
-      }
+      // headers: {
+      //   'Access-Control-Allow-Origin': '*'
+      // }
 
     },
 
