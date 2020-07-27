@@ -74,7 +74,7 @@ export default {
 
   axios:
     {
-      baseUrl: 'https://api.extranet.more-otdih.online/api/',
+      baseURL: 'https://api.extranet.more-otdih.online/api/',
     },
 
   fontawesome: {
