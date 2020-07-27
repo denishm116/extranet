@@ -57,10 +57,9 @@
         },
         methods: {
             async fromL() {
-                await this.$axios.get('/test').then((response) => {
-                    this.fromLaravel = response.data
-                    console.log(response.data)
-                })
+                let result = await this.$axios.get('test')
+                this.fromLaravel = result.data.data
+                console.log(result.data.data)
             }
         }
     }
