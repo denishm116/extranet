@@ -57,6 +57,7 @@ export default {
   env: {
     baseUrl: process.env.BASE_URL || 'https://api.extranet.more-otdih.online/api/'
   },
+
   components: true,
 
   buildModules: [
@@ -72,7 +73,6 @@ export default {
 
   axios:
     {
-
       baseUrl: 'https://api.extranet.more-otdih.online/api',
     },
 
